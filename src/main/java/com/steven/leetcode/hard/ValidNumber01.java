@@ -1,5 +1,6 @@
 package com.steven.leetcode.hard;
 
+import java.awt.geom.FlatteningPathIterator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -11,20 +12,24 @@ import java.util.regex.Pattern;
  */
 public class ValidNumber01 {
   public static void main(String[] args) {
-    String s = "0";
+    String s = "84656e656D";
 
     System.out.println(isNumber(s));
   }
 
   public static boolean isNumber(String s) {
-    boolean result = false;
-    try {
-      Float num = Float.valueOf(s);
-      result = true;
-    } catch (Exception ex) {
+    boolean result;
+    Character str = s.charAt(s.length() - 1);
+    if (str == 'l' || str == 'L' || str == 'f' || str == 'F' || str == 'd' || str == 'D') {
       result = false;
-    } finally {
-      return result;
+    } else {
+      try {
+        Float.valueOf(s);
+        result = true;
+      } catch (Exception e) {
+        result = false;
+      }
     }
+    return result;
   }
 }

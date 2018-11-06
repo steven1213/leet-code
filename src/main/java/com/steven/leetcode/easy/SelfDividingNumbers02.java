@@ -9,7 +9,7 @@ import java.util.List;
  * @author steven.
  * @since JDK 1.8 CreateTime: 2018-07-13 17:29:58.
  */
-public class SelfDividingNumbers {
+public class SelfDividingNumbers02 {
 
   public static void main(String[] args) {
     int left = 1;
