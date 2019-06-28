@@ -1,15 +1,20 @@
-package com.steven.leetcode.list;
+package com.steven.leetcode;
+
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * @Description: TODO. @Author: steven. @CreateTime: 2019-06-27 16:20. Copyright © 2019
  * ,www.oneiotworld.com All Rights Reserved.
  */
+@Setter
+@Getter
 public class ListNode {
-  int val;
+  public int val;
 
-  ListNode next;
+  public ListNode next;
 
-  ListNode(int x) {
+  public ListNode(int x) {
     val = x;
   }
 }

@@ -1,5 +1,7 @@
 package com.steven.leetcode.list;
 
+import com.steven.leetcode.ListNode;
+
 /**
  * @Description: TODO. @Author: steven. @CreateTime: 2019-06-27 16:21. Copyright © 2019
  * ,www.oneiotworld.com All Rights Reserved.

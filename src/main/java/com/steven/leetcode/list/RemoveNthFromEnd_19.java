@@ -1,6 +1,6 @@
 package com.steven.leetcode.list;
 
-import java.util.List;
+import com.steven.leetcode.ListNode;
 
 /**
  * @Description: TODO. @Author: steven. @CreateTime: 2019-06-27 16:24. Copyright © 2019
