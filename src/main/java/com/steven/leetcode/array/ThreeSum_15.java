@@ -1,14 +1,14 @@
-package com.steven.leetcode.medium.array;
+package com.steven.leetcode.array;
 
 import java.util.*;
 
 /**
  * Copyright © 2018 ,www.oneiotworld.com All Rights Reserved.
  *
- * @author steven.
+ * @author steven.  时间复杂度高，不通过
  * @since JDK 1.8 CreateTime: 2018-07-27 16:19:28.
  */
-public class ThreeSum {
+public class ThreeSum_15 {
   public static void main(String[] args) {
     //
     int[] nums = new int[] {-1, 0, 1, 2, -1, -4};

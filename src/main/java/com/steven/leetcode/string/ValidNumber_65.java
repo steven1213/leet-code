@@ -1,4 +1,4 @@
-package com.steven.leetcode.hard;
+package com.steven.leetcode.string;
 
 import java.awt.geom.FlatteningPathIterator;
 import java.util.regex.Matcher;
@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  * @author steven.
  * @since JDK 1.8 CreateTime: 2018-10-19 16:01:34.
  */
-public class ValidNumber01 {
+public class ValidNumber_65 {
   public static void main(String[] args) {
     String s = "84656e656D";
 
