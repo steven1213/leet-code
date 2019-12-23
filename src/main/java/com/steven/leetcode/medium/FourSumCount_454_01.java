@@ -35,8 +35,12 @@ public class FourSumCount_454_01 {
     public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
         Map<Integer, Integer> map = new HashMap<>();
         int count = 0;
-        for (int i = 0; i < A.length; i++) {
-            for (int j = 0; j < B.length; j++) {
+        int i = 0;
+        int lenA = A.length;
+        int lenB = B.length;
+        for (; i < lenA; i++) {
+            int j = 0;
+            for (; j < lenB; j++) {
                 int sum = A[i] + B[j];
                 if (map.containsKey(sum)) {
                     map.put(sum, map.get(sum) + 1);
@@ -45,15 +49,18 @@ public class FourSumCount_454_01 {
                 }
             }
         }
-        for (int i = 0; i < C.length; i++) {
-            for (int j = 0; j < D.length; j++) {
+        i = 0;
+        int lenC = D.length;
+        int lenD = D.length;
+        for (; i < lenC; i++) {
+            int j = 0;
+            for (; j < lenD; j++) {
                 int sum = C[i] + D[j];
                 if (map.containsKey(-sum)) {
                     count += map.get(-sum);
                 }
             }
         }
-
         return count;
     }
 }
