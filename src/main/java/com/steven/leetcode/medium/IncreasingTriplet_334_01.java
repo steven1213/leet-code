@@ -31,17 +31,14 @@ import java.util.TreeSet;
  */
 public class IncreasingTriplet_334_01 {
     public boolean increasingTriplet(int[] nums) {
-        int len = nums.length;
-        for (int i = 0; i <= len - 3; i++) {
-            int a = nums[i];
-            for (int j = i + 1; j <= len - 2; j++) {
-                int b = nums[j];
-                for (int k = j + 1; k <= len - 1; k++) {
-                    int c = nums[k];
-                    if (a < b && b < c) {
-                        return true;
-                    }
-                }
+        int min = Integer.MAX_VALUE, secondMin = Integer.MAX_VALUE;
+        for (int num : nums) {
+            if (num <= min) {
+                min = num;
+            } else if (num < secondMin) {
+                secondMin = num;
+            } else if (num > secondMin) {
+                return true;
             }
         }
         return false;
