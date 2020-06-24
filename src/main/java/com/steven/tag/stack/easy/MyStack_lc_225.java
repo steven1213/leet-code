@@ -25,14 +25,14 @@ import java.util.concurrent.LinkedBlockingQueue;
 /**
  * @author steven
  */
-public class MyStack_lc_255 {
+public class MyStack_lc_225 {
 
     private static LinkedList<Integer> linkedBlockingQueue = null;
 
     /**
      * Initialize your data structure here.
      */
-    public MyStack_lc_255() {
+    public MyStack_lc_225() {
         linkedBlockingQueue = new LinkedList<>();
     }
 
